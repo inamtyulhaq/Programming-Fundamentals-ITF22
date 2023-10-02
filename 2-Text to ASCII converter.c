@@ -1,2 +1,6 @@
 // It is an assignment work given by the professor.
-// Task is to write a sentence and find/print the ASCII of every alphabet.
+/* Assignment is basically to draw the flowhcart to solve the questions/problem statement
+and also to write the program in C language that finds/prints the ASCII of every alphabet
+written in the sentence */
+
+
