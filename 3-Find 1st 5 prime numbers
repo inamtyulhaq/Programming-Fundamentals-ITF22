@@ -1,2 +1,36 @@
 /* This was the task given to us in the lab to do.
 I wrote the following program to find 1st 5 prime numbers. */
+
+#include <stdio.h>
+
+int isPrime(int num) {
+    if (num <= 1) {
+        return 0;
+    }
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int main() {
+    int count = 0;
+    int num = 2; // Starting from the first prime number
+    
+    printf("First 5 prime numbers are:\n");
+
+    while (count < 5) {
+        if (isPrime(num)) {
+            printf("%d ", num);
+            count++;
+        }
+        num++;
+    }
+
+    printf("\n");
+
+    return 0;
+}
+
