@@ -10,6 +10,6 @@ int main(){
     for(i=1; i<=num; i++){
         fact = fact*i;
     }
-    printf("The reverse of this num is %d", fact);
+    printf("The factorial of this num is %d", fact);
     return 0;
 }
