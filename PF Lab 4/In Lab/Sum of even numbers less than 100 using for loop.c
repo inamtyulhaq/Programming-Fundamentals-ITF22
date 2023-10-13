@@ -6,6 +6,6 @@ int main() {
     {
         sum+=num;
     }
-    printf("The sum of even numbers less than 100 is %d", sum);
+    printf("The sum of even numbers less than 100 is %d.", sum);
     return 0;
 }
