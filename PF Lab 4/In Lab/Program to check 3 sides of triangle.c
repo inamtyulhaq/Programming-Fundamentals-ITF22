@@ -10,6 +10,7 @@ int main(){
     printf("Enter length of third side: ");
     scanf("%f", &side3);
     getchar();
+    if(side1>=0 && side2>=0 & side3>=0 ){
     if(side1==side2 && side2==side3 && side3==side1){
         printf("This triangle is equilateral");
     }
@@ -22,6 +23,10 @@ int main(){
     }
     else{
         printf("Can't say about this one");
+    }
+    }
+    else{
+        printf("Go away hacker!");
     }
     return 0;
 }
