@@ -2,7 +2,7 @@
 
 int main() {
     int month;
-    printf("Don't know the month name:(\n");
+    printf("Don't know the month name\n");
     printf("Type the month number here: ");
     scanf("%d", &month);
     switch(month){
@@ -43,7 +43,7 @@ int main() {
     printf("The month is December");
     break;
     default:
-    printf("Well, there are only 12 months sadly");
+    printf("Well, there are only 12 months sadly.");
     break;
 }
     return 0;
