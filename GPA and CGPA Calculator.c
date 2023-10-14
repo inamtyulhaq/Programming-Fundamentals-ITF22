@@ -2,7 +2,7 @@
 
 int main() {
     float GPA, GPA1, GPA2;
-    int subnum, subnum2;
+    int subnum, subnum2, semnum, semnum2, semgpa, semgpa2;
     char yn;
     printf("Hey there! Enter the number of your subjects: ");
     scanf("%d", &subnum);
@@ -23,7 +23,15 @@ int main() {
     printf("Wanna find you total CGPA? ");
     scanf("%c", &yn);
     if(yn=='Y' || yn=='y'){
-        printf("\nHaven't found its logic yet. Will work on it soon. Good bye! ");
+        printf("\nHow many semesters have you completed: \n");
+        scanf("%d", &semnum);
+        semnum2=semnum;
+        for(semnum=0;semnum2<semnum;semnum2++){
+            printf("Enter GPA of semester %d: \n", semnum2);
+            semgpa+=semnum2;
+        }
+        semgpa2=(semgpa)/semnum2;
+        printf("Your CGPA is %d\n", semgpa2);
     }
     else{
         printf("\nHave a nice day. Thanks for using my program!");
