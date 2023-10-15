@@ -55,3 +55,16 @@ int main()
             square=num9*num9;
             printf("Square of the number is: %.2f\n", square);
             break;
+        case 7:
+            printf("You chose: Exit");
+            exit(0);
+        default:
+            printf("Invalid choice.\n");
+    }
+    printf("********************************************************\n");
+    printf("Select an operation to perform the calculation in C Calculator:\n1. Addition               2. Subtraction\n3. Multiplication         4. Division\n5. Square                 6. Square Root\n7. Exit\n");
+    
+    printf("Please, make a choice: ");
+    scanf("%d", &operation);
+    return 0;
+}
