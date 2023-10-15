@@ -39,3 +39,19 @@ int main()
             multi=num3*num4;
             printf("Multiplication of two numbers is: %.2f\n", multi);
             break;
+        case 4:
+            float num7, num8, div;
+            printf("Enter First Number: ");
+            scanf("%f", &num7);
+            printf("Enter Second Number: ");
+            scanf("%f", &num8);
+            div=num3/num4;
+            printf("Division of two numbers is: %.2f\n", div);
+            break;
+        case 5:
+            float num9, square;
+            printf("Enter a Number: ");
+            scanf("%f", &num9);
+            square=num9*num9;
+            printf("Square of the number is: %.2f\n", square);
+            break;
