@@ -55,6 +55,15 @@ int main()
             square=num9*num9;
             printf("Square of the number is: %.2f\n", square);
             break;
+        case 6:
+            float num10, sqroot;
+            printf("Enter a Number: ");
+            scanf("%f", &num10);
+            for (int num= 1; num * num <= num10; num++) {
+                sqroot = num;
+            }
+            printf("Square root of the number is: %.2f\n", sqroot);
+            break;
         case 7:
             printf("You chose: Exit");
             exit(0);
