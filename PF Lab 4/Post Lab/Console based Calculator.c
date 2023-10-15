@@ -36,7 +36,7 @@ int main()
             scanf("%f", &num5);
             printf("Enter Second Number: ");
             scanf("%f", &num6);
-            multi=num3*num4;
+            multi=num5*num6;
             printf("Multiplication of two numbers is: %.2f\n", multi);
             break;
         case 4:
@@ -45,7 +45,7 @@ int main()
             scanf("%f", &num7);
             printf("Enter Second Number: ");
             scanf("%f", &num8);
-            div=num3/num4;
+            div=num7/num8;
             printf("Division of two numbers is: %.2f\n", div);
             break;
         case 5:
