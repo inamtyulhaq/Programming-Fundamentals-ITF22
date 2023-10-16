@@ -9,7 +9,7 @@ int main() {
   for (i = num1; i <= num2; i++) {
     if (i % 4 == 0 && i % 16 == 0) {
       sum += i;
-      printf("%d + ",i);
+      printf("%d+",i);//has a problem
     }
   }
   if(sum==0){
