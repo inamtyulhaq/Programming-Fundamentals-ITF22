@@ -16,7 +16,7 @@ int main() {
       printf("No such number exists between the two");
   }
   else{
-      printf("%d", sum);
+      printf(" = %d", sum);
   }
 
   return 0;
