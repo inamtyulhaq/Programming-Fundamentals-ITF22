@@ -13,7 +13,7 @@ int main() {
         GPA1+=GPA;
     }
     if(GPA>4){
-        printf("Looks like, you made some mistake here!");
+        printf("Looks like, you made some mistake here!\n");
     }
     else{
         GPA2=(GPA1)/subnum;
