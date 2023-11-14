@@ -206,8 +206,7 @@ void CalcUseAgain(){
             printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            displayMenu();
-            scanf("%d",&choice);
+            CalcUseAgain();
             break;
             
             case 2:
@@ -220,8 +219,7 @@ void CalcUseAgain(){
             printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            displayMenu();
-            scanf("%d",&choice);
+            CalcUseAgain();
             break;
             
             case 3:
@@ -234,8 +232,7 @@ void CalcUseAgain(){
             printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            displayMenu();
-            scanf("%d",&choice);
+            CalcUseAgain();
             break;
             
             case 4:
@@ -248,8 +245,7 @@ void CalcUseAgain(){
             printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            displayMenu();
-            scanf("%d",&choice);
+            CalcUseAgain();
             break;
             
             case 5:
@@ -260,8 +256,7 @@ void CalcUseAgain(){
             printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            displayMenu();
-            scanf("%d",&choice);
+            CalcUseAgain();
             break;
             
             case 6:
@@ -272,8 +267,7 @@ void CalcUseAgain(){
             printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            displayMenu();
-            scanf("%d",&choice);
+            CalcUseAgain();
             break;
             
             case 7:
@@ -284,8 +278,7 @@ void CalcUseAgain(){
             printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            displayMenu();
-            scanf("%d",&choice);
+            CalcUseAgain();
             break;
             
             case 8:
@@ -296,8 +289,7 @@ void CalcUseAgain(){
             printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            displayMenu();
-            scanf("%d",&choice);
+            CalcUseAgain();
             break;
             
             case 9:
