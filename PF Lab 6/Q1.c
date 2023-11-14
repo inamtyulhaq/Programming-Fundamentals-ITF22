@@ -44,7 +44,7 @@ double square(double num1){
 
 double squareroot(double num1){
     if (num1<0){
-        printf("The square root is a complex number.");
+        printf("The square root is a complex number.\n");
     }
     return sqrt(num1);
 }
@@ -75,11 +75,11 @@ void CalcUseAgain(){
             case 1:
             printf("You chose: Addition\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             printf("Enter Number: ");
-            scanf("%f", &num2);
+            scanf("%lf", &num2);
             num3 = addition(num1,num2);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
             displayMenu();
@@ -89,11 +89,11 @@ void CalcUseAgain(){
             case 2:
             printf("You chose: Subtraction\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             printf("Enter Number: ");
-            scanf("%f", &num2);
+            scanf("%lf", &num2);
             num3 = subtraction(num1,num2);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
             displayMenu();
@@ -103,11 +103,11 @@ void CalcUseAgain(){
             case 3:
             printf("You chose: Multiplication\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             printf("Enter Number: ");
-            scanf("%f", &num2);
+            scanf("%lf", &num2);
             num3 = multiplication(num1,num2);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
             displayMenu();
@@ -117,11 +117,11 @@ void CalcUseAgain(){
             case 4:
             printf("You chose: Division\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             printf("Enter Number: ");
-            scanf("%f", &num2);
+            scanf("%lf", &num2);
             num3 = division(num1,num2);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
             displayMenu();
@@ -131,9 +131,9 @@ void CalcUseAgain(){
             case 5:
             printf("You chose: Square\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             num3 = square(num1);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
             displayMenu();
@@ -143,9 +143,9 @@ void CalcUseAgain(){
             case 6:
             printf("You chose: Square Root\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             num3 = squareroot(num1);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
             displayMenu();
@@ -155,9 +155,9 @@ void CalcUseAgain(){
             case 7:
             printf("You chose: Ceil\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             num3 = ceil(num1);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
             displayMenu();
@@ -167,9 +167,9 @@ void CalcUseAgain(){
             case 8:
             printf("You chose: Floor\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             num3 = floor(num1);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
             displayMenu();
