@@ -65,11 +65,11 @@ void CalcUseAgain(){
         bool verify = isInRange(choice);
         while(!verify){
             printf("Invalid Choice, Input again: ");
-            scanf("%d",&choice);
+            scanf("%d", &choice);
             verify = isInRange(choice);
         }
         
-        float num1,num2,num,num3;
+        double num1,num2,num,num3;
             switch(choice){
             
             case 1:
@@ -189,107 +189,115 @@ void CalcUseAgain(){
         bool verify = isInRange(choice);
         while(!verify){
             printf("Invalid Choice, Input again: ");
-            scanf("%d",&choice);
+            scanf("%d", &choice);
             verify = isInRange(choice);
         }
         
-        float num1,num2,num,num3;
+        double num1,num2,num,num3;
             switch(choice){
             
             case 1:
             printf("You chose: Addition\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             printf("Enter Number: ");
-            scanf("%f", &num2);
+            scanf("%lf", &num2);
             num3 = addition(num1,num2);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            CalcUseAgain();
+            displayMenu();
+            scanf("%d",&choice);
             break;
             
             case 2:
             printf("You chose: Subtraction\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             printf("Enter Number: ");
-            scanf("%f", &num2);
+            scanf("%lf", &num2);
             num3 = subtraction(num1,num2);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            CalcUseAgain();
+            displayMenu();
+            scanf("%d",&choice);
             break;
             
             case 3:
             printf("You chose: Multiplication\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             printf("Enter Number: ");
-            scanf("%f", &num2);
+            scanf("%lf", &num2);
             num3 = multiplication(num1,num2);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            CalcUseAgain();
+            displayMenu();
+            scanf("%d",&choice);
             break;
             
             case 4:
             printf("You chose: Division\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             printf("Enter Number: ");
-            scanf("%f", &num2);
+            scanf("%lf", &num2);
             num3 = division(num1,num2);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            CalcUseAgain();
+            displayMenu();
+            scanf("%d",&choice);
             break;
             
             case 5:
             printf("You chose: Square\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             num3 = square(num1);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            CalcUseAgain();
+            displayMenu();
+            scanf("%d",&choice);
             break;
             
             case 6:
             printf("You chose: Square Root\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             num3 = squareroot(num1);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            CalcUseAgain();
+            displayMenu();
+            scanf("%d",&choice);
             break;
             
             case 7:
             printf("You chose: Ceil\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             num3 = ceil(num1);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            CalcUseAgain();
+            displayMenu();
+            scanf("%d",&choice);
             break;
             
             case 8:
             printf("You chose: Floor\n");
             printf("Enter Number: ");
-            scanf("%f", &num1);
+            scanf("%lf", &num1);
             num3 = floor(num1);
-            printf("%.2f\n",num3);
+            printf("%.2lf\n",num3);
             printf("\n");
             printf("*******************************************\n");
-            CalcUseAgain();
+            displayMenu();
+            scanf("%d",&choice);
             break;
             
             case 9:
