@@ -1,0 +1,36 @@
+#include<stdio.h>
+//For example we are validating that the input should be between 1-9
+int main()
+{
+    int digit;
+    int inputStatus;
+    do
+    {
+        printf("Kindly enter a digit between 1-9: ");
+
+        //scanf is a function. It returns 0 when conversion cannot be done.
+        inputStatus=scanf("%d",&digit);
+
+        //Validating that the entered value is an integer (conversion is successful/inputStatus!=0)
+        if(inputStatus==0)
+        {
+            printf("Input must be an integer. ");
+
+            //refer to the comments attached below for this
+            while (getchar() != '\n') {}
+        }
+
+        //Validating that the entered integer is within range
+        else if(digit<1||digit>9)
+        {
+            printf("INVALID INPUT. ");
+        }
+    } while (digit<1||digit>9);
+    
+}
+
+//this loop is simply discarding the values stored in the input buffer when user entered non-integer value
+//otherwise the next time the we use scanf, it will read from the previously stored values in input buffer instead of taking user input
+//will result in infinite loop if you remove this line, try it!
+//getchar() reads a character from the input buffer and removes it
+//hence through this loop we are emptying the input buffer until we find that '\n' or the enter that the user pressed
